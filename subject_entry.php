@@ -20,7 +20,9 @@ include "includes/header.php"; ?>
     }
     }
     ?>
-
+<?php  
+error_reporting(E_ALL ^ E_DEPRECATED);
+include("config.php");?>
 <div class="container">
 
     <div class="row">
@@ -97,14 +99,21 @@ include "includes/header.php"; ?>
                             <div class="form-group">
 
                                 <label for="teacher">Teacher Name</label>
-                                <select class="form-control" required id="teacher" name="teacher">
-                                    <option>Select teacher</option>
-                                    <option>Chayapathi</option>
-                                    <option>Ranjitha</option>
-                                    <option>Yogesh</option>
-                                    <option>Mahesh</option>
-                                    <option>Kala</option>
-                                </select>
+                                
+                                <?php
+                                    $qs=mysql_query("select * from teacher_table");
+                                ?>
+                                <?php	
+                                    echo "<select class='form-control' required id='teacher' name='teacher' >";	
+                                    		
+                                    while($teachername=mysql_fetch_row($qs))
+                                    {				
+                                    echo"
+                                    <option value=$teachername[1]>$teachername[1] </option>";
+                                    }
+                                    echo "</select>"."<br>";
+                                ?>
+                                    
                             </div>
                         </div>
                     </div>
