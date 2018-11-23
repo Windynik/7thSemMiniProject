@@ -25,7 +25,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 </button>
-                                <a href="home.php" class="navbar-brand"><img src="image/icit2.jpg" alt="ICIT" title=" ICIT HOME" /></a>
+                                <a href="home.php" class="navbar-brand"><img src="image/icit2.png" alt="ICIT" title=" ICIT HOME" /></a>
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar" class="external-link">
                             <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;"  role="menu" aria-labelledby="dropdownMenu" aria-expanded="false">

@@ -6,7 +6,6 @@
                             <b><i class="fa fa-pencil"> </i> Entries</b>
                       </div>
                       <div class="list-group">
-                      <a href="index.php" class="list-group-item">Admin</a>
                         <a href="student_entry.php" class="list-group-item">Student Entry</a>
                         <a href="teacher_entry.php" class="list-group-item">Teacher Entry</a>
                         <a href="subject_entry.php" class="list-group-item">Subject Entry</a>
