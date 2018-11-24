@@ -10,7 +10,8 @@
                             <p>Copyright&copy;<?php echo date('Y'); ?> Web Based Attendance Management System</p>
                        
                              Supervisor: <a href="https://www.facebook.com/nikhilnprem" target="new">Nikhil.N.Prem </a><br>
-                             Developer: <a href="https://www.facebook.com/aditibadrinath" target="new">Aditi Badrinath </a>
+                             Developer: <a href="mailto:aditi.beis.15@acharya.ac.in" target="new">Aditi Badrinath </a><br>
+                             Professional: <a href="mailto:abhishek.beis.15@acharya.ac.in" target="new">Abhishek Anand </a> 
                         </div></span>
             
                         </div>

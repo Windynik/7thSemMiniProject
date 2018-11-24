@@ -1,5 +1,6 @@
     <?php
 error_reporting(E_ALL & ~ E_NOTICE);
+
 session_start();
 $pagetitle="Login Page";
 ?>
@@ -69,7 +70,7 @@ $pagetitle="Login Page";
 <!--===============================================================================================-->
 </head>
 <body>
-	
+	<!--  -->
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-b-160 p-t-50">

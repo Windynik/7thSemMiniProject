@@ -1,5 +1,16 @@
 
 <?php
+session_start();
+if(isset($_SESSION['id'])){
+  $username=($_SESSION['username']);
+  $userId=($_SESSION['id']);
+  echo "The user name is : $username" ;
+  echo "\n the id is : $userId";
+  }
+  else{
+      
+      header("Location:login.php");
+  }
  $pagetitle="Teachers Registration Page";
  include "includes/header.php"; ?>
  <?php 

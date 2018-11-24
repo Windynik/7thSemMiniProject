@@ -36,15 +36,12 @@ session_start();
                         <li>
                             <div class="clearfix"> </div>
                             <p class="blog_text">
-                                spoopy boopy :D
+                            Acharya institute of technology is known for global leadership in technical education, and the Acharya faculty is a combination of young and experienced, passionate and curious individuals. They are the most distinguished scholars, who constantly do research in their respective fields.
                                 Admins
                         </li>
                     </ul>
                 </div> <!-- /.blog_post 1 -->
             </div>
-            <!--  Institute of computing and information technology, since its inception in 1987 has been focusing on human resource development through its various programs. With the rapid development in computing technologies and the associated growth in information technology (IT) applications, the importance of the computer sciences as a discipline has become of paramount importance. The availability of properly trained computer professionals determines the extent to which IT applications can be developed. This situation has created new and exciting opportunities for those who are well qualified and properly trained in IT. The BSCS and MCS programs at the Institute of Computing & Information Technology (ICIT) offer an excellent opportunity to individuals for a career in the IT field. 
-                            With a first class qualified faculty, laboratories equipped wiht the state-of-the-art computing facilities and a well stocked library, the ICIT offers an opportunity for achieving standard and high quality computer science education in PAKISTAN. The said objective in mind, the institute has started MS and Ph.D programs.</p>
-                            -->
         </div>
     </div>
 </div>

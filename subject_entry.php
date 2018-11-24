@@ -1,4 +1,15 @@
 <?php
+session_start();
+if(isset($_SESSION['id'])){
+    $username=($_SESSION['username']);
+    $userId=($_SESSION['id']);
+    echo "The user name is : $username" ;
+    echo "\n the id is : $userId";
+    }
+    else{
+        
+        header("Location:login.php");
+    }
 $pagetitle="Entering Subjects Detail In This Page ";
 include "includes/header.php"; ?>
 

@@ -1,4 +1,4 @@
- <div>
+<div>
             <!-- Carousel -->
             <div id="templatemo-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -13,7 +13,7 @@
                             <div class="carousel-caption">
                                 <h1>WELCOME TO UNIVERSITY ATTENDANCE PORTAL </h1>
                                 <h1>Developed By Aditi, Abhishek and Nikhil</h1>
-                                <p>This is a really bad prototype</p>
+                                <p>This is a still prototype</p>
                             </div>
                         </div>
                     </div>
@@ -37,8 +37,8 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                 	<h1>HOW IT SAVES TIME</h1>
-                                    <p>It Acts as an information system for the student to get information about their attendacne whereever they want , however they want.</p>
-                                    <p><a class="btn btn-lg btn-orange" href="#" role="button">Read More</a></p>
+                                    <p>It acts as an information system for the student to get information about their attendacne whereever they want , however they want.</p>
+                                    <p><a class="btn btn-lg btn-orange" href="https://en.wikipedia.org/wiki/Information_system" role="button">Read More</a></p>
                                 </div>
                             </div>
                         </div>

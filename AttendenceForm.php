@@ -15,6 +15,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 include("config.php");?>
     <div class="form-container">
         <form method="post" action="saveattendence.php" role="form">
+        
             <!-- <div class="container"> -->
             <div class="col-lg-3">
                 <div class="form-group">
@@ -22,13 +23,24 @@ include("config.php");?>
       $qs=mysql_query("select * from student_table");
 ?>
                     <?php	
-    echo "<select class='form-control' name='stid' >";			
+    echo "<select class='form-control' name='stid' >";
+    
+           
+    			
     while($stid=mysql_fetch_row($qs))
     {				
     echo"
     <option value=$stid[0]>$stid[1] </option>";
     }
     echo "</select>"."<br>";
+    foreach($stid=mysql_fetch_row($qs)) 
+    {
+        echo '<div class="student-record">
+          <span class="roll"><a href="student.php?roll='.str_replace("/","-",$roll).'&code='.$node->getCode().'&year='.$node->getYear().'&section='.$node->getSection().'">'.$roll.'</a></span>: 
+          <span class="present">'.$data['present'].'</span>'.
+          ' <button class="marker btn">A</button> <button class="btn btn-danger delete-roll" data-toggle="modal" data-target=".delete-warning">&times;</button>
+        </div>';
+      }  
 ?>
                 </div>
             </div>
@@ -45,9 +57,10 @@ include("config.php");?>
       echo "</select>";?>
             </div>
             <!--col-lg-4-->
-            <input type="radio" name="present" value="P" />Present
+            <input type="radio" name="present"  value="P" />Present
             <input type="radio" name="present" value="A" />Absent
             <button type="submit" name="save" value="Save" class="btn btn-success btn-sm">Save</button>
+
 
         </form>
     </div>
