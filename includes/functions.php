@@ -107,7 +107,7 @@ function get_single_std($conn,$table,$id)
 function delete_std($conn,$table,$id){
 
 			try {
-				$query = "DELETE  FROM {$table} WHERE std_roll_no={$id}";
+				$query = "DELETE  FROM {$table} WHERE phone={$id}";
 					$stmt = $conn->prepare( $query );
 					$stmt->execute();
 					
@@ -215,7 +215,7 @@ function delete_std($conn,$table,$id){
 				return "ERROR". $e->getMessage();
 			}
 
-	      }     
+	    }     
 
     /******************************/
 	//Deleting Teacher's Record

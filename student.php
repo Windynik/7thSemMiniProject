@@ -32,10 +32,10 @@
 
 <div class="container">
 <?php 
-if (isset($_GET['std_roll_no'])) {
-        $id = $_GET['std_roll_no'];
+if (isset($_GET['phone'])) {
+        $phone = $_GET['phone'];
         
-        if($db->delete_std($conn,'student_table',$id)){
+        if($db->delete_std($conn,'student_table',$phone)){
             echo "Record was Deleted";
             }
         } ?>
@@ -85,7 +85,7 @@ if (isset($_GET['std_roll_no'])) {
             echo "<div class='ui mini buttons'>";
             echo '<a class="ui mini positive button" href="student_update.php?std_roll_no='.$post['std_roll_no'].'"> <i class="glyphicon glyphicon-pencil"></i>Update</a>';
             echo "<div class='or'></div>";    
-            echo '<a class="ui mini red button" href="student.php?std_roll_no='.$post['std_roll_no'].'"><i class="glyphicon glyphicon-remove"> </i>Delete</a>';
+            echo '<a class="ui mini red button" href="student.php?phone='.$post['phone'].'"><i class="glyphicon glyphicon-remove"> </i>Delete</a>';
             echo "</div>";
             echo '</td>';    
            echo '</tr>';  

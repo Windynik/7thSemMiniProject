@@ -86,16 +86,16 @@ inner join subject_table S on T.subject_no=S.subject_no group by S.subject_name 
 while($row=mysql_fetch_row($query3))
 {
   echo"<tr>";
-           echo '<td>'. $row[1] . '</td>';
+            echo '<td>'. $row[1] . '</td>';
             echo '<td>'. $row[6] . '</td>';
 			echo '<td>'. $row[12] . '</td>';
 			echo '<td>'. $row[14] . '</td>';
 			echo '<td>'. $row[4] . '</td>';
            $query=mysql_query("Select  (select count(*) from tbl_attendance where Attendance='P' and std_roll_no='$row[1]' and subject_no='$row[2]')/(Select count(attendance) from tbl_attendance where std_roll_no='$row[1]' and subject_no='$row[2]')*100 as per from tbl_attendance where std_roll_no='$row[1]' and subject_no='$row[2]' group by per asc ");
-		   
+		    
 		while ($row2=mysql_fetch_row($query))
-		   {
-			   echo '<td>'. $row2[0] . '%</td>';
+		    {
+			    echo '<td>'. $row2[0] . '%</td>';
 if($row2[0]<30)
 {
 echo "<td><span style='color:red;'>dropped</span></td>";
@@ -105,10 +105,10 @@ else
 echo "<td><span style='color:green;'>Promoted</span></td>";
 
 
-			   }
-			   echo"</tr>";
+			    }
+			    echo"</tr>";
 }
-           ?>
+            ?>
             </tbody>
         </table>
     </div>
