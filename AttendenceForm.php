@@ -1,5 +1,28 @@
-<?php  $pagetitle="AttendenceForm";
-include "includes/header.php"; ?>
+<?php
+session_start();
+if(isset($_SESSION['id'])){
+    $username=($_SESSION['username']);
+    $userId=($_SESSION['id']);
+    echo "The user name is : $username" ;
+    echo "\n the id is : $userId";
+    }
+    else{
+        
+        header("Location:login.php");
+    }
+$pagetitle="Entering Subjects Detail In This Page ";
+if($userId=='1'){
+    include "includes/header.php";
+}
+elseif($userId=='2'){
+    include "includes/header2.php";
+}
+else{
+    include "includes/header3.php";
+}
+
+$pagetitle="AttendenceForm";
+?>
 <div class="container">
     <div class="row">
         <div class="templatemo-line-header" style="margin-top: 0px;">
@@ -33,14 +56,14 @@ include("config.php");?>
     <option value=$stid[0]>$stid[1] </option>";
     }
     echo "</select>"."<br>";
-    foreach($stid=mysql_fetch_row($qs)) 
-    {
-        echo '<div class="student-record">
-          <span class="roll"><a href="student.php?roll='.str_replace("/","-",$roll).'&code='.$node->getCode().'&year='.$node->getYear().'&section='.$node->getSection().'">'.$roll.'</a></span>: 
-          <span class="present">'.$data['present'].'</span>'.
-          ' <button class="marker btn">A</button> <button class="btn btn-danger delete-roll" data-toggle="modal" data-target=".delete-warning">&times;</button>
-        </div>';
-      }  
+    // foreach($stid=mysql_fetch_row($qs)) 
+    // {
+    //     echo '<div class="student-record">
+    //       <span class="roll"><a href="student.php?roll='.str_replace("/","-",$roll).'&code='.$node->getCode().'&year='.$node->getYear().'&section='.$node->getSection().'">'.$roll.'</a></span>: 
+    //       <span class="present">'.$data['present'].'</span>'.
+    //       ' <button class="marker btn">A</button> <button class="btn btn-danger delete-roll" data-toggle="modal" data-target=".delete-warning">&times;</button>
+    //     </div>';
+    //   }  
 ?>
                 </div>
             </div>

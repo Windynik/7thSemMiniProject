@@ -2,16 +2,25 @@
 session_start();
 if(isset($_SESSION['id'])){
     $username=($_SESSION['username']);
-    $userId=($_SESSION['id']);
+    $userID=($_SESSION['id']);
     echo "The user name is : $username" ;
-    echo "\n the id is : $userId";
+    echo "\n the id is : $userID";
     }
     else{
         
         header("Location:login.php");
     }
 $pagetitle="Entering Subjects Detail In This Page ";
-include "includes/header.php"; ?>
+if($userID=='1'){
+    include "includes/header.php";
+}
+elseif($userID=='2'){
+    include "includes/header2.php";
+}
+else{
+    include "includes/header3.php";
+}
+?>
 
 <?php 
 

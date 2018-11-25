@@ -25,11 +25,11 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 </button>
-                                <a href="home.php" class="navbar-brand"><img src="image/icit2.png" alt="logo?" title="HOMElogo" /></a>
+                                <a href="home2.php" class="navbar-brand"><img src="image/icit2.png" alt="logo?" title="HOMElogo" /></a>
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar" class="external-link">
                             <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;"  role="menu" aria-labelledby="dropdownMenu" aria-expanded="false">
-                                <li><a href="home.php" class="external-link">Home</a></li>
+                                <li><a href="home2.php" class="external-link">Home</a></li>
                                 <li><a href="student.php" class="external-link">Students</a></li>
                                 <li><a href="teacher.php" class="external-link">Teachers</a></li>
                                 <li><a href="subject.php" class="external-link">Subjects</a></li>

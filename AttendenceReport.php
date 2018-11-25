@@ -1,6 +1,28 @@
 <?php
+session_start();
+if(isset($_SESSION['id'])){
+    $username=($_SESSION['username']);
+    $userId=($_SESSION['id']);
+    echo "The user name is : $username" ;
+    echo "\n the id is : $userId";
+    }
+    else{
+        
+        header("Location:login.php");
+    }
+$pagetitle="Entering Subjects Detail In This Page ";
+if($userId=='1'){
+    include "includes/header.php";
+}
+elseif($userId=='2'){
+    include "includes/header2.php";
+}
+else{
+    include "includes/header3.php";
+}
+
 $pagetitle="student Report";
-include "includes/header.php"; ?>
+?>
 <div class="container">
     <div class="row">
         <div class="templatemo-line-header" style="margin-top: 0px;">
