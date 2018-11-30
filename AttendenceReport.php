@@ -85,7 +85,7 @@ inner join subject_table S on T.subject_no=S.subject_no group by S.subject_name 
 
 while($row=mysql_fetch_row($query3))
 {
-  echo"<tr>";
+    echo"<tr>";
             echo '<td>'. $row[1] . '</td>';
             echo '<td>'. $row[6] . '</td>';
 			echo '<td>'. $row[12] . '</td>';
